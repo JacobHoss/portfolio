@@ -1,24 +1,107 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="assets/bulma.css">
-  </head>
-  <body class="feature">
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
-    </div>
-  </section>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="./assets/script.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="stylesheet" href="assets/style.css">
+	<!-- Bulma Version 0.9.0-->
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<style>
+	html {
+		background: rgb(2, 0, 36);
+		background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 116, 1) 0%, rgba(0, 212, 255, 1) 50%);
+	}
+</style>
+
+<body>
+	<!-- START NAV -->
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item title is-4" href="./index.html">
+					Jacob Hoss
+				</a>
+				<span class="navbar-burger burger" data-target="navbarMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+			<div id="navbarMenu" class="navbar-menu">
+				<div class="navbar-end">
+					<a class="navbar-item is-active" href="index.html">About Me</a>
+					<a class="navbar-item" href="./contact.html">Contact</a>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link" href="./portfolio.html">Portfolio</a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item" href="https://nataliegarcia-8.github.io/Domestic-Covid19-TravelApp/"
+								target="_blank">COVID-19 Travel App</a>
+							<a class="navbar-item" href="https://jacobhoss.github.io/weather-dashboard/"
+								target="_blank">Weather Dashboard</a>
+							<a class="navbar-item" href="https://jacobhoss.github.io/car-trivia-quiz/"
+								target="_blank">Car Trivia Quiz</a>
+							<a class="navbar-item" href="https://jacobhoss.github.io/random-password-generator/"
+								target="_blank">Random Password Generator</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- END NAV -->
+	<section class="hero is-fullheight">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<div class="columns is-8 is-variable ">
+					<div class="column is-two-thirds has-text-left">
+						<h1 class="title is-1">Contact Jacob</h1>
+						<div class="social-media">
+							<a href="https://github.com/JacobHoss" target="_blank" class="button is-light is-large"><i
+									class="fa fa-github" aria-hidden="true"></i></a>
+							<a href="https://www.linkedin.com/in/jacob-hoss-00b431139" target="_blank"
+								class="button is-light is-large"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="column is-one-third has-text-left">
+						<div class="field">
+							<label class="label">Name</label>
+							<div class="control">
+								<input class="input is-medium" type="text">
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Email</label>
+							<div class="control">
+								<input class="input is-medium" type="text">
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Message</label>
+							<div class="control">
+								<textarea class="textarea is-medium"></textarea>
+							</div>
+						</div>
+						<div class="control">
+							<button type="submit"
+								class="button is-link is-fullwidth has-text-weight-medium is-medium">Send
+								Message</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="./assets/script.js"></script>
+
 </html>
