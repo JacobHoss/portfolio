@@ -19,6 +19,24 @@ section:hover {
     opacity: 1.0;
 }
 
+.faded {
+    opacity: 0.85;
+}
+
+.custom-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    margin: 0 auto 8px;
+    margin-bottom: 4.5rem;
+    background-color: hsl(0, 0%, 96%);
+    border-radius: 15px;
+}
+
+.navbar-burger {
+    width: 100px !important;
+    height: 75px !important;
+}
+
 .page-bg {
     opacity: 0;
     position: fixed;
@@ -27,6 +45,32 @@ section:hover {
     height: 100%;
     width: 100%;
     background: url(./DSC_0094.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.90;
+    }
+}
+
+.portfolio-bg {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: hsl(0, 0%, 96%);
     background-size: cover;
 
     animation-name: fadeIn;

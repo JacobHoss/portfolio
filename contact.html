@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact</title>
-	<link rel="stylesheet" href="assets/style.css">
 	<!-- Bulma Version 0.9.0-->
 	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+	<link rel="stylesheet" href="assets/style.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -18,7 +18,7 @@
 	<nav class="navbar">
 		<div class="container">
 			<div class="navbar-brand">
-				<a class="navbar-item is-size-4" href="./index.html">
+				<a class="navbar-item is-size-3" href="./index.html">
 					<strong>Jacob Hoss</strong>
 				</a>
 				<span class="navbar-burger burger" data-target="navbarMenu">
@@ -27,13 +27,14 @@
 					<span></span>
 				</span>
 			</div>
-			<div id="navbarMenu" class="navbar-menu">
+			<div id="navbarMenu" class="navbar-menu is-size-5">
 				<div class="navbar-end">
-					<a class="navbar-item is-active" href="index.html">About Me</a>
-					<a class="navbar-item" href="./contact.html">Contact</a>
+					<a class="navbar-item" href="index.html">About Me</a>
+					<a class="navbar-item" href="./assets/resume.pdf" target="_blank">Resume</a>
+					<a class="navbar-item" href="./contact.html"><strong>Contact</strong></a>
 					<div class="navbar-item has-dropdown is-hoverable">
 						<a class="navbar-link" href="./portfolio.html">Portfolio</a>
-						<div class="navbar-dropdown">
+						<div class="navbar-dropdown is-size-6">
 							<a class="navbar-item" href="https://nataliegarcia-8.github.io/Domestic-Covid19-TravelApp/"
 								target="_blank">COVID-19 Travel App</a>
 							<a class="navbar-item" href="https://jacobhoss.github.io/weather-dashboard/"
@@ -50,7 +51,7 @@
 	</nav>
 	<!-- END NAV -->
 	<div class="page-bg"></div>
-	<main class="hero is-fullheight">
+	<main class="faded hero is-fullheight">
 		<div class="hero-body">
 			<div class="container has-text-centered">
 				<div class="columns is-8 is-variable ">
@@ -91,6 +92,15 @@
 			</div>
 		</div>
 	</main>
+
+	<footer class="faded custom-footer">
+		<div class="content has-text-centered">
+			<p>
+				<strong>Photo Background</strong> by <a href="https://www.instagram.com/jacobhoss2/"
+					target="_blank">Jacob Hoss <i class="fa fa-instagram"></i></a>
+			</p>
+		</div>
+	</footer>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
