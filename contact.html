@@ -13,20 +13,13 @@
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
-<style>
-	html {
-		background: rgb(2, 0, 36);
-		background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 116, 1) 0%, rgba(0, 212, 255, 1) 50%);
-	}
-</style>
-
 <body>
 	<!-- START NAV -->
 	<nav class="navbar">
 		<div class="container">
 			<div class="navbar-brand">
-				<a class="navbar-item title is-4" href="./index.html">
-					Jacob Hoss
+				<a class="navbar-item is-size-4" href="./index.html">
+					<strong>Jacob Hoss</strong>
 				</a>
 				<span class="navbar-burger burger" data-target="navbarMenu">
 					<span></span>
@@ -56,12 +49,12 @@
 		</div>
 	</nav>
 	<!-- END NAV -->
-	<section class="hero is-fullheight">
+	<div class="page-bg"></div>
+	<main class="hero is-fullheight">
 		<div class="hero-body">
 			<div class="container has-text-centered">
 				<div class="columns is-8 is-variable ">
 					<div class="column is-two-thirds has-text-left">
-						<h1 class="title is-1">Contact Jacob</h1>
 						<div class="social-media">
 							<a href="https://github.com/JacobHoss" target="_blank" class="button is-light is-large"><i
 									class="fa fa-github" aria-hidden="true"></i></a>
@@ -69,27 +62,27 @@
 								class="button is-light is-large"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 						</div>
 					</div>
-					<div class="column is-one-third has-text-left">
+					<div class="column is-one-third has-text-left box">
 						<div class="field">
 							<label class="label">Name</label>
 							<div class="control">
-								<input class="input is-medium" type="text">
+								<input id="name" class="input is-medium" type="text">
 							</div>
 						</div>
 						<div class="field">
-							<label class="label">Email</label>
+							<label class="label">Subject</label>
 							<div class="control">
-								<input class="input is-medium" type="text">
+								<input id="subject" class="input is-medium" type="text">
 							</div>
 						</div>
 						<div class="field">
 							<label class="label">Message</label>
 							<div class="control">
-								<textarea class="textarea is-medium"></textarea>
+								<textarea id="message" class="textarea is-medium"></textarea>
 							</div>
 						</div>
 						<div class="control">
-							<button type="submit"
+							<button type="submit" id="send" onclick="send()"
 								class="button is-link is-fullwidth has-text-weight-medium is-medium">Send
 								Message</button>
 						</div>
@@ -97,7 +90,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</main>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

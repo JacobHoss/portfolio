@@ -7,6 +7,18 @@ body {
     position: relative;
 }
 
+html {
+background:black;
+}
+
+section {
+    opacity: 0.85;
+}
+
+section:hover {
+    opacity: 1.0;
+}
+
 .page-bg {
     opacity: 0;
     position: fixed;
@@ -32,3 +44,8 @@ body {
         opacity: 0.90;
     }
 }
+
+
+.indent {
+    text-indent: 30px;
+  }
